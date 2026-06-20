@@ -1,6 +1,7 @@
 const generalController = require("../controllers/generalController");
 const { methodNotAllowed, notFound } = require("../utils");
 
+// Lida com as rotas
 function generalRoutes(req, res, url, method) {
   if (url === "/") {
     if (method !== "GET") return methodNotAllowed(res);

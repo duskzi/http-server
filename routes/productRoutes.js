@@ -1,6 +1,7 @@
 const productController = require("../controllers/productController");
 const { methodNotAllowed } = require("../utils");
 
+// Rotas dos produtos
 function productRoutes(req, res, url, method) {
   if (url === "/produtos") {
     if (method === "GET") return productController.getProducts(req, res);
